@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title}}</title>
+    </head>
+    <body style="background-image: url(../UI/klee.jpg);" >
+        <table>
+
+        </table>
+        <div style="margin: 40px auto; background-color: antiquewhite; width: 900px; height: 1500px;border:palevioletred 5px solid;">
+            <div style="margin: 40px auto; background-color:cadetblue; width: 800px;border: black 1px solid;">
+                <div class="title" style="margin: 10px auto; width: 100%;text-align: center;font-size:xxx-large;" >
+                    IMAGES-TO-IMAGES
+                </div>
+                <div class="chines_tips" style="margin: 10px auto; width: 100%;text-align: center;font-size:xx-large;">
+                    嘿铁子，转换一下相片的风格吧
+                </div>
+                <div class="english_tips" style="margin-bottom:10px ;margin-top: -5px; width: 100%;text-align: center;font-size:large;">
+                    Convert your photo into ANOTHER style.
+                </div>
+                <div class="photo_arae" style="margin: 10px auto;background-color: white;width: 512px;height: 512px;border: palevioletred 5px dotted;">
+
+                </div>
+                <div class="form_area" style="margin: 0 auto;background-color: chocolate;width:512px;">
+                    {% from 'bootstrap/form.html' import render_form, render_field, render_form_row %}    
+                    <form action="" method="POST" novalidate enctype="multipart/form-data">
+                        {{ form.hidden_tag() }}
+                        {{ form.csrf_token }}
+                        
+                        {{ render_field(form.icon) }}
+                        {{ render_field(form.submit) }}
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
