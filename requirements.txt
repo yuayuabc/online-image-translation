@@ -1,0 +1,16 @@
+dominate==2.4.0
+WTForms==2.3.3
+visdom==0.1.8.9
+torchvision==0.8.0
+Bootstrap_Flask==1.5.1
+torch==1.7.0
+Flask_Uploads==0.2.1
+numpy==1.19.2
+scipy==1.5.2
+requests==2.25.1
+Flask_WTF==0.14.3
+Flask==1.1.2
+beautifulsoup4==4.9.3
+flask_bootstrap==3.3.7.1
+Pillow==8.1.2
+skimage==0.0
